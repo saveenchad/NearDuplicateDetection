@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "lib": ["ES6", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": ".",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ESNext",
+    "typeRoots": ["node_modules/@types"],
+  },
+  "exclude": ["node_modules"],
+  "files": []
+}
