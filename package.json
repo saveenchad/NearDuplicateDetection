@@ -4,14 +4,31 @@
   "description": "Near Duplicate Detection",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "30": "node --inspect --max-old-space-size=12288 app.js --tsv thirty > output/schadal3-thirty.txt",
+    "100": "node --inspect --max-old-space-size=12288 app.js --tsv hundred > output/schadal3-hundred.txt",
+    "300": "node --inspect --max-old-space-size=12288 app.js --tsv threehundred > output/schadal3-threehundred.txt",
+    "1k": "node --inspect --max-old-space-size=12288 app.js --tsv onek > output/schadal3-onek.txt",
+    "2k": "node --inspect --max-old-space-size=12288 app.js --tsv twoktests/twok > output/schadal3-twok.txt",
+    "3k": "node --inspect --max-old-space-size=12288 app.js --tsv threek > output/schadal3-threek.txt",
+    "10k": "node --inspect --max-old-space-size=12288 app.js --tsv tenk > output/schadal3-tenk.txt",
+    "30k": "node --inspect --max-old-space-size=12288 app.js --tsv thirtyk > output/schadal3-thirtyk.txt",
+    "100k": "node --inspect --max-old-space-size=12288 app.js --tsv hundredk > output/schadal3-hundredk.txt"
   },
   "author": "Saveen Chadalawada",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@stdlib/nlp-porter-stemmer": "^0.0.7",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "long": "^5.2.1",
+    "n-gram": "^2.0.2",
+    "readline": "^1.3.0",
+    "stopword": "^2.0.5",
+    "string-hash-64": "^1.0.3"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.188"
-  }
+    "@types/lodash": "^4.14.188",
+    "@types/node": "^18.11.9"
+  },
+  "type": "module"
 }
